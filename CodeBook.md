@@ -1,6 +1,6 @@
 # Introduction
 ## The script run_analysis.R performs the 5 steps described in the course project's definition.
-	Merges the training and the test sets to create one data set using the following steps.
+	### Merges the training and the test sets to create one data set using the following steps.
 		Read the train data into x_train_data, y_train_data and subject_train_data
 		Read the test data into x_test_data, y_test_data and subject_test_data
 		Combine and create 'x' data set using rbind into x_data
