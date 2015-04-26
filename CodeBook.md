@@ -1,27 +1,28 @@
 # Introduction
-## The script run_analysis.Rperfrms the 5 steps described in the curse prject's definitin.
-	### Merges the training and the test sets t create ne data set using the fllwing steps.
-	#### Read the train data int x_train_data, y_train_data and subject_train_data
-	#### Read the test data int x_test_data, y_test_data and subject_test_data
-	#### Cmbine and create 'x' data set using rbind int x_data
-	#### Cmbine and create 'y' data set using rbind int y_data
-	#### Cmbine and create 'subject' data set using rbind int subject_data
-	### Extracts nly the measurements n the mean and standard deviatin fr each measurement using the features.txt in the fllwing steps.
-	#### Read features.txt int features_data
-	#### Extract nly clumn ids having mean r std in their names
-	#### Create a subset using the mean_std_features clumns
-	#### Set the clumn names using mean_std_features
-	### Uses descriptive activity names t name the activities in the data set frm activity_labels.txt as mentined in the fllwing steps.
-	#### Read activity_labels.txt int activities_labels_data
-	#### Set values with crrect activity names int y_data
-	#### Set clumn name in y_data t activity
-	### Apprpriately labels the data set with descriptive variable names as mentined in the fllwing steps.
-	#### Set clumn name f subject_data t subject
-	#### Bind all the data in x_data, y_data and subject_data in a single data set
-	### Frm the data set in the last step, creates a secnd, independent tidy data set f each variable fr each activity and each subject as mentined in the fllwing steps. 
-	#### Using ddply and numclwise(mean) get the mean f the final_data  subject and activity wise int mean_data
-	#### Using the write.table functin write the mean_data cntent int the tidy_mean_data.txt
-	#### The result data in the file tidy_mean_data.txt  will 180 rws fr each f 30 subjects and fr each f the 6 activities and upladed t this repsitry.
+## The script run_analysis.Rperfrms the 5 steps described in the curse project's definition.
+	Merges the training and the test sets to create one data set using the following steps.
+		Read the train data into x_train_data, y_train_data and subject_train_data
+		Read the test data into x_test_data, y_test_data and subject_test_data
+		Combine and create 'x' data set using rbind into x_data
+		Combine and create 'y' data set using rbind into y_data
+		Combine and create 'subject' data set using rbind into subject_data
+	Extracts only the measurements on the mean and standard deviation for each measurement using the features.txt in the 	following steps.
+		Read features.txt into features_data
+		Extract only column ids having mean or std in their names
+		Create a subset using the mean_std_features columns
+		Set the column names using mean_std_features
+	Uses descriptive activity names to name the activities in the data set from activity_labels.txt as mentioned in the 		following steps.
+		Read activity_labels.txt into activities_labels_data
+		Set values with correct activity names into y_data
+		Set column name in y_data to activity
+	Appropriately labels the data set with descriptive variable names as mentioned in the following steps.
+		Set column name of subject_data to subject
+		Bind all the data in x_data, y_data and subject_data in a single data set
+	From the data set in the last step, creates a second, independent tidy data set of each variable for each activity 		and each subject as mentioned in the following steps. 
+		Using ddply and numcolwise(mean) get the mean of the final_data  subject and activity wise into mean_data
+		Using the write.table function write the mean_data content into the tidy_mean_data.txt
+	The result data in the file tidy_mean_data.txt  will 180 rows for each of 30 subjects and for each of the 6 			activities and uploaded to this repository.
+
 ##Variables
 	### x_train_data, y_train_data, x_test_data, y_test_data, subject_train_data and subject_test_data cntain the data frm the dwnladed files.
 	### x_data is the merged data f x_train_data and x_test_data
