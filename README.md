@@ -10,11 +10,15 @@ A code book that describes the variables, the data, and any transformations or w
 called CodeBook.md.
 
 The run_analysis.R is having the code to perform the analyses described in the 5 steps. They can be launched and executed 
-in RStudio by just importing the file by downloading the file using following commands
+in RStudio by just importing the file by downloading the file using following commands:
+
   fileURL <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+
   project_data <- download.file(fileURL,destfile="./data/project_data2.zip",method="internal")
+
 and then unzipping them in the respective <directory>.
 Then run the following command to set the directory:
+
   setwd(<directory>)
 
 
