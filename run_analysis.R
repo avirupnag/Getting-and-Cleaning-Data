@@ -1,4 +1,14 @@
 library(plyr)
+# It is suggested to edit and run following commented commands as per the OS and versions used
+# Download and Extract file into /data/project_data.zip
+# fileURL <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+#Set directory as
+#directory <- <Choose your path>
+#setwd(directory)
+# project_data <- download.file(fileURL,destfile="./data/project_data.zip",method="internal")
+#unzip the file in the ./data folder 
+# and setwd to the "...\\data\\UCI HAR Dataset\\" path
+# new_dir <- paste0(directory,"\\data\\UCI HAR Dataset\\")
 
 #1. Merges the training and the test sets to create one data set.
 
